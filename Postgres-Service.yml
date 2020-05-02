@@ -5,7 +5,7 @@ kind: Service
 metadata:
   name: db
   labels:
-    name: postgres-db
+    name: db-service
     for: votingapp-viapods
 
 spec:
