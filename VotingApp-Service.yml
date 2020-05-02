@@ -1,0 +1,22 @@
+apiVersion: v1
+
+kind: Service
+
+metadata:
+  name: votingapp-service
+  labels:
+    name: votingapp-service
+    for: votingapp-viapods
+
+spec:
+  type: LoadBalancer
+
+  ports:
+    - targetPort: 80
+      port: 80
+
+  selector:
+    name: votingapp-pod
+    for: votingapp-viapods
+
+

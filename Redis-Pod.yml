@@ -1,0 +1,18 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+  name: redis-pod
+  labels:
+    name: redis-pod
+    for: votingapp-viapods
+
+spec:
+  containers:
+    - name: redis-image
+      image: redis
+      ports:
+        - containerPort: 6379
+
+
