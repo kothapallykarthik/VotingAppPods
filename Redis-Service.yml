@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: redis-service
+  name: redis
   labels:
     name: redis-service
     for: votingapp-viapods
